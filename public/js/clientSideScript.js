@@ -17,7 +17,9 @@ weatherForm.addEventListener('submit',(e)=>{
             messageOne.textContent = data.error
         }else{
             messageOne.textContent = `${data.name} , ${data.country}`
-            messageTwo.textContent = `Temperature is ${data.temperature} degrees out and feels like ${data.feelslike} `
+            messageTwo.textContent = `${data.weather_description} , 
+            Humidity ${data.humidity} , Temperature is ${data.temperature} degrees out and it feels like ${data.feelslike} `
+            
         }
     })
 })
