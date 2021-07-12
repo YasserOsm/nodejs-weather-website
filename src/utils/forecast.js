@@ -10,7 +10,6 @@ const forecast = (longtitude , latitude , callback)=>{
         }else{
             callback(error , {
                 name : body.location.name ,
-                region : body.location.region,
                 country : body.location.country ,
                 weather_description : body.current.weather_descriptions[0],
                 temperature : body.current.temperature,
