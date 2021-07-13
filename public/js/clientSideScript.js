@@ -6,7 +6,7 @@ const messageTwo=document.querySelector('#message-2')
 
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
-    console.log(process.env.PORT);
+    
     const Location = searchInput.value
     
     messageOne.textContent = 'Loading...'
