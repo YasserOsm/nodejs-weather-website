@@ -26,7 +26,7 @@ app.get('',(req , res)=>{
     res.render('index',{
         title : 'Weather app',
         name : 'Yasser Osama',
-        port
+     
     })
 })
 
