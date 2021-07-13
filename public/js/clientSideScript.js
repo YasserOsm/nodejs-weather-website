@@ -3,9 +3,10 @@ const searchInput = document.querySelector('input')
 
 const messageOne=document.querySelector('#message-1')
 const messageTwo=document.querySelector('#message-2')
-console.log(process.env.PORT);
+
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
+    console.log(process.env.PORT);
     const Location = searchInput.value
     
     messageOne.textContent = 'Loading...'
